@@ -1,4 +1,2 @@
-SympMeds
-========
-
-SympMeds andriod app
+software-engineering
+====================
