@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="26" version="2.0">
+<workbench progressCount="15" version="2.0">
 <workbenchAdvisor/>
 <window height="860" width="807" x="793" y="0">
 <fastViewData fastViewLocation="1024"/>
@@ -63,7 +63,7 @@
 </editor>
 <editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SymptomList.java" partName="SymptomList.java" path="C:/Users/Randy/Documents/GitHub/SympMeds/trunk/app/SympMeds/src/com/example/sympmeds/SymptomList.java" title="SymptomList.java" tooltip="SympMeds/src/com/example/sympmeds/SymptomList.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/SympMeds/src/com/example/sympmeds/SymptomList.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="705" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="266" selectionLength="0" selectionOffset="1726" selectionTopPixel="385"/>
 </editor>
 <editor id="com.android.ide.eclipse.editors.CommonXmlEditor" name="activity_drug_list.xml" partName="activity_drug_list.xml" path="C:/Users/Randy/Documents/GitHub/SympMeds/trunk/app/SympMeds/res/layout/activity_drug_list.xml" title="activity_drug_list.xml" tooltip="SympMeds/res/layout/activity_drug_list.xml" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/SympMeds/res/layout/activity_drug_list.xml"/>
@@ -87,13 +87,15 @@
 <viewState/>
 </view>
 <view id="com.android.ide.eclipse.ddms.views.HeapView" partName="Heap"/>
-<view id="com.android.ide.eclipse.ddms.views.LogCatView" partName="LogCat"/>
+<view id="com.android.ide.eclipse.ddms.views.LogCatView" partName="LogCat">
+<viewState/>
+</view>
 <view id="com.android.ide.eclipse.ddms.views.FileExplorerView" partName="File Explorer"/>
 <view id="com.android.ide.eclipse.ddms.views.NetworkStatsView" partName="Network Statistics"/>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Errors (1 item)"/>
+<category IMemento.internal.id="Errors"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -105,7 +107,9 @@
 </view>
 <view id="org.eclipse.jdt.ui.PackageExplorer" partName="Package Explorer">
 <viewState group_libraries="1" layout="2" linkWithEditor="0" rootMode="1" workingSetName="">
-<customFilters userDefinedPatternsEnabled="false">&#x0A;<xmlDefinedFilters>&#x0A;<child filterId="org.eclipse.jdt.ui.PackageExplorer.LibraryFilter" isEnabled="false"/>
+<customFilters userDefinedPatternsEnabled="false">
+<xmlDefinedFilters>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.LibraryFilter" isEnabled="false"/>
 <child filterId="org.eclipse.jdt.ui.PackageExplorer.LocalTypesFilter" isEnabled="false"/>
 <child filterId="org.eclipse.jdt.ui.PackageExplorer.StaticsFilter" isEnabled="false"/>
 <child filterId="org.eclipse.jdt.ui.PackageExplorer.ClosedProjectsFilter" isEnabled="false"/>
@@ -266,17 +270,18 @@
 <hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
 <fastViewBars>
-<fastViewBar fastViewLocation="1024" id="bottom" orientation="256" selectedTabId="org.eclipse.ui.console.ConsoleView" style="1">
+<fastViewBar fastViewLocation="1024" id="bottom" orientation="256" selectedTabId="com.android.ide.eclipse.ddms.views.LogCatView" style="1">
 <fastViews>
 <view id="org.eclipse.ui.views.ProblemView" ratio="0.3"/>
 <view id="org.eclipse.jdt.ui.JavadocView" ratio="0.3"/>
 <view id="org.eclipse.jdt.ui.SourceView" ratio="0.3"/>
 <view id="org.eclipse.ui.console.ConsoleView" ratio="0.3"/>
+<view id="com.android.ide.eclipse.ddms.views.LogCatView" ratio="0.29898402"/>
 </fastViews>
 </fastViewBar>
 <fastViewBar fastViewLocation="16384" id="left" orientation="512" selectedTabId="org.eclipse.jdt.ui.PackageExplorer" style="1">
 <fastViews>
-<view id="org.eclipse.jdt.ui.PackageExplorer" ratio="0.3"/>
+<view id="org.eclipse.jdt.ui.PackageExplorer" ratio="0.29843953"/>
 </fastViews>
 </fastViewBar>
 <fastViewBar fastViewLocation="131072" id="right" orientation="512" selectedTabId="org.eclipse.ui.views.ContentOutline" style="1">
@@ -288,7 +293,7 @@
 <layout>
 <mainWindow>
 <info folder="true" part="left">
-<folder appearance="2" expanded="2">
+<folder appearance="2" expanded="0">
 <page content="org.eclipse.jdt.ui.PackageExplorer" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
@@ -307,7 +312,7 @@
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.25" ratioLeft="250" ratioRight="750" relationship="2" relative="left"/>
 <info folder="true" part="bottom" ratio="0.7496136" ratioLeft="485" ratioRight="162" relationship="4" relative="org.eclipse.ui.editorss">
-<folder appearance="2" expanded="2">
+<folder appearance="2" expanded="0">
 <page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.JavadocView" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.SourceView" label="LabelNotFound"/>
@@ -315,11 +320,12 @@
 <page content="org.eclipse.ui.console.ConsoleView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
+<page content="com.android.ide.eclipse.ddms.views.LogCatView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 <info folder="true" part="right" ratio="0.7493333" ratioLeft="562" ratioRight="188" relationship="2" relative="org.eclipse.ui.editorss">
-<folder appearance="2" expanded="2">
+<folder appearance="2" expanded="0">
 <page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
 <page content="org.eclipse.ui.texteditor.TemplatesView" label="LabelNotFound"/>
 <page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
@@ -334,117 +340,142 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/SympMeds/res/layout/activity_main.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/SympMeds/res/values/strings.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/SympMeds/src/com/example/sympmeds/MainActivity.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/SympMeds/res/layout/activity_symptom_list.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/SympMeds/src/com/example/sympmeds/SymptomList.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/SympMeds/res/layout/activity_drug_list.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/SympMeds/src/com/example/sympmeds/DrugList.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/SympMeds/res/layout/activity_drug_info.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/SympMeds/src/com/example/sympmeds/DrugInfo.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/SympMeds/src/com/example/sympmeds/DrugInfo.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/SympMeds/src/com/example/sympmeds/DrugList.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/SympMeds/res/layout/activity_drug_list.xml"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/SympMeds/src/com/example/sympmeds/SymptomList.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/SympMeds/res/layout/activity_symptom_list.xml"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/SympMeds/src/com/example/sympmeds/MainActivity.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/SympMeds/res/values/strings.xml"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/SympMeds/res/layout/activity_main.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.systemInPlaceEditor" path="/SympMeds/assets/Database.xlsx"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/SympMeds/res/values/strings.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/SympMeds/res/layout/activity_symptom_list.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/SympMeds/res/layout/activity_main.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/SympMeds/src/com/example/sympmeds/MainActivity.java"/>
 </editors>
-<item historyLabel="SymptomList.java" index="4">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="MainActivity.java" index="2">
-<position info="not_deleted" x="603" y="0"/>
-</item>
-<item historyLabel="SymptomList.java" index="4">
-<position info="not_deleted" x="549" y="0"/>
-</item>
-<item historyLabel="activity_drug_list.xml" index="5"/>
-<item historyLabel="DrugList.java" index="6">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="activity_drug_list.xml" index="5"/>
-<item historyLabel="SymptomList.java" index="4">
-<position info="not_deleted" x="549" y="0"/>
-</item>
-<item historyLabel="activity_symptom_list.xml" index="3">
-<position info="not_deleted" x="495" y="202"/>
-</item>
-<item historyLabel="activity_drug_list.xml" index="5"/>
-<item historyLabel="strings.xml" index="1"/>
-<item historyLabel="activity_main.xml" index="0"/>
-<item historyLabel="activity_symptom_list.xml" index="3"/>
-<item historyLabel="strings.xml" index="1"/>
-<item historyLabel="activity_symptom_list.xml" index="3"/>
-<item historyLabel="strings.xml" index="1"/>
-<item historyLabel="activity_symptom_list.xml" index="3"/>
-<item historyLabel="strings.xml" index="1"/>
-<item historyLabel="activity_drug_list.xml" index="5"/>
-<item historyLabel="MainActivity.java" index="2">
-<position info="not_deleted" x="603" y="0"/>
-</item>
-<item historyLabel="activity_main.xml" index="0"/>
-<item historyLabel="MainActivity.java" index="2">
-<position info="not_deleted" x="603" y="0"/>
-</item>
-<item historyLabel="SymptomList.java" index="4">
-<position info="not_deleted" x="549" y="0"/>
-</item>
-<item historyLabel="activity_symptom_list.xml" index="3"/>
-<item historyLabel="SymptomList.java" index="4">
-<position info="not_deleted" x="549" y="0"/>
-</item>
-<item historyLabel="activity_drug_list.xml" index="5"/>
-<item historyLabel="activity_symptom_list.xml" index="3"/>
-<item historyLabel="activity_drug_list.xml" index="5"/>
-<item historyLabel="DrugList.java" index="6">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="activity_drug_info.xml" index="7"/>
-<item historyLabel="DrugInfo.java" index="8">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="activity_drug_info.xml" index="7"/>
-<item historyLabel="strings.xml" index="1"/>
-<item historyLabel="activity_drug_info.xml" index="7"/>
-<item historyLabel="strings.xml" index="1"/>
-<item historyLabel="activity_drug_info.xml" index="7"/>
-<item historyLabel="DrugInfo.java" index="9">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="DrugList.java" index="10">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="activity_drug_list.xml" index="11"/>
-<item historyLabel="SymptomList.java" index="12">
+<item historyLabel="SymptomList.java" index="0">
 <position info="not_deleted" x="1006" y="0"/>
 </item>
-<item historyLabel="activity_symptom_list.xml" index="13"/>
-<item historyLabel="MainActivity.java" index="14">
+<item historyLabel="activity_symptom_list.xml" index="1"/>
+<item historyLabel="MainActivity.java" index="2">
 <position info="not_deleted" x="603" y="0"/>
 </item>
-<item historyLabel="strings.xml" index="15"/>
-<item historyLabel="activity_main.xml" index="16"/>
-<item historyLabel="MainActivity.java" index="14">
+<item historyLabel="strings.xml" index="3"/>
+<item historyLabel="activity_main.xml" index="4"/>
+<item historyLabel="MainActivity.java" index="2">
 <position info="not_deleted" x="603" y="0"/>
 </item>
-<item historyLabel="activity_symptom_list.xml" index="13"/>
-<item historyLabel="SymptomList.java" index="12">
+<item historyLabel="activity_symptom_list.xml" index="1"/>
+<item historyLabel="SymptomList.java" index="0">
 <position info="not_deleted" x="202" y="0"/>
 </item>
-<item historyLabel="MainActivity.java" index="14">
+<item historyLabel="MainActivity.java" index="2">
 <position info="not_deleted" x="216" y="164"/>
 </item>
-<item historyLabel="SymptomList.java" index="12">
+<item historyLabel="SymptomList.java" index="0">
 <position info="not_deleted" x="480" y="0"/>
 </item>
-<item historyLabel="MainActivity.java" index="14">
+<item historyLabel="MainActivity.java" index="2">
 <position info="not_deleted" x="551" y="63"/>
 </item>
-<item active="true" historyLabel="SymptomList.java" index="12">
+<item historyLabel="SymptomList.java" index="0">
 <position info="not_deleted" x="480" y="0"/>
+</item>
+<item historyLabel="Database.xlsx" index="5"/>
+<item historyLabel="SymptomList.java" index="0">
+<position info="not_deleted" x="1137" y="0"/>
+</item>
+<item historyLabel="SymptomList.java" index="0">
+<position info="not_deleted" x="968" y="0"/>
+</item>
+<item historyLabel="SymptomList.java" index="0">
+<position info="not_deleted" x="848" y="0"/>
+</item>
+<item historyLabel="SymptomList.java" index="0">
+<position/>
+</item>
+<item historyLabel="SymptomList.java" index="0">
+<position info="not_deleted" x="1898" y="0"/>
+</item>
+<item historyLabel="strings.xml" index="6"/>
+<item historyLabel="SymptomList.java" index="0">
+<position info="not_deleted" x="1265" y="0"/>
+</item>
+<item historyLabel="strings.xml" index="6"/>
+<item historyLabel="SymptomList.java" index="0">
+<position info="not_deleted" x="1265" y="0"/>
+</item>
+<item historyLabel="SymptomList.java" index="0">
+<position info="not_deleted" x="1068" y="0"/>
+</item>
+<item historyLabel="SymptomList.java" index="0">
+<position info="not_deleted" x="1464" y="0"/>
+</item>
+<item historyLabel="SymptomList.java" index="0">
+<position/>
+</item>
+<item historyLabel="SymptomList.java" index="0">
+<position info="not_deleted" x="1286" y="0"/>
+</item>
+<item historyLabel="SymptomList.java" index="0">
+<position info="not_deleted" x="1315" y="0"/>
+</item>
+<item historyLabel="SymptomList.java" index="0">
+<position info="not_deleted" x="1317" y="0"/>
+</item>
+<item historyLabel="SymptomList.java" index="0">
+<position info="not_deleted" x="1341" y="0"/>
+</item>
+<item historyLabel="SymptomList.java" index="0">
+<position info="not_deleted" x="1375" y="0"/>
+</item>
+<item historyLabel="SymptomList.java" index="0">
+<position info="not_deleted" x="1377" y="0"/>
+</item>
+<item historyLabel="SymptomList.java" index="0">
+<position info="not_deleted" x="1507" y="0"/>
+</item>
+<item historyLabel="SymptomList.java" index="0">
+<position info="not_deleted" x="1581" y="0"/>
+</item>
+<item historyLabel="SymptomList.java" index="0">
+<position info="not_deleted" x="1617" y="0"/>
+</item>
+<item historyLabel="SymptomList.java" index="0">
+<position info="not_deleted" x="1898" y="0"/>
+</item>
+<item historyLabel="SymptomList.java" index="0">
+<position info="not_deleted" x="1685" y="0"/>
+</item>
+<item historyLabel="SymptomList.java" index="0">
+<position info="not_deleted" x="1778" y="0"/>
+</item>
+<item historyLabel="SymptomList.java" index="0">
+<position info="not_deleted" x="1778" y="0"/>
+</item>
+<item historyLabel="SymptomList.java" index="0">
+<position info="not_deleted" x="1898" y="0"/>
+</item>
+<item historyLabel="SymptomList.java" index="0">
+<position info="not_deleted" x="1726" y="0"/>
+</item>
+<item historyLabel="SymptomList.java" index="0">
+<position info="not_deleted" x="1898" y="0"/>
+</item>
+<item historyLabel="SymptomList.java" index="0">
+<position info="not_deleted" x="2935" y="0"/>
+</item>
+<item historyLabel="activity_symptom_list.xml" index="7"/>
+<item historyLabel="SymptomList.java" index="0">
+<position info="not_deleted" x="587" y="0"/>
+</item>
+<item historyLabel="activity_main.xml" index="8"/>
+<item historyLabel="MainActivity.java" index="9">
+<position info="not_deleted" x="551" y="63"/>
+</item>
+<item historyLabel="activity_main.xml" index="8"/>
+<item historyLabel="activity_symptom_list.xml" index="7"/>
+<item historyLabel="activity_main.xml" index="8"/>
+<item active="true" historyLabel="SymptomList.java" index="0">
+<position info="not_deleted" x="587" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -471,6 +502,9 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.systemInPlaceEditor" name="Database.xlsx" tooltip="SympMeds/assets/Database.xlsx">
+<persistable path="/SympMeds/assets/Database.xlsx"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DrugInfo.java" tooltip="SympMeds/src/com/example/sympmeds/DrugInfo.java">
 <persistable path="/SympMeds/src/com/example/sympmeds/DrugInfo.java"/>
 </file>

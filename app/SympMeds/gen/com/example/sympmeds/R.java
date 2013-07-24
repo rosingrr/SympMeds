@@ -73,21 +73,23 @@ public final class R {
     public static final class string {
         public static final int action_settings=0x7f060001;
         public static final int app_name=0x7f060000;
-        public static final int directions_label=0x7f060010;
-        public static final int drug_instructions=0x7f06000a;
-        public static final int drug_name=0x7f06000d;
-        public static final int get_info=0x7f06000b;
+        public static final int directions_label=0x7f060012;
+        public static final int drug_instructions=0x7f06000b;
+        public static final int drug_name=0x7f06000f;
+        public static final int get_info=0x7f06000c;
+        public static final int medications=0x7f06000d;
         public static final int search=0x7f060006;
-        public static final int side_effects_label=0x7f06000f;
+        public static final int side_effects_label=0x7f060011;
         public static final int start=0x7f060003;
-        public static final int symptom_description=0x7f060009;
+        public static final int symptom_description=0x7f06000a;
         public static final int symptom_instructions=0x7f060005;
-        public static final int symptom_name=0x7f060008;
-        public static final int symptoms_label=0x7f06000e;
-        public static final int title_activity_drug_info=0x7f06000c;
-        public static final int title_activity_drug_list=0x7f060007;
+        public static final int symptom_name=0x7f060009;
+        public static final int symptoms=0x7f060007;
+        public static final int symptoms_label=0x7f060010;
+        public static final int title_activity_drug_info=0x7f06000e;
+        public static final int title_activity_drug_list=0x7f060008;
         public static final int title_activity_symptom_list=0x7f060004;
-        public static final int unknown=0x7f060011;
+        public static final int unknown=0x7f060013;
         public static final int welcome=0x7f060002;
     }
     public static final class style {

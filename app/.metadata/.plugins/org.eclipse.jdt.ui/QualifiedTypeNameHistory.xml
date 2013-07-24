@@ -1,2 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="android.content.res.AssetManager"/>
+<fullyQualifiedTypeName name="jxl.read.biff.BiffException"/>
+<fullyQualifiedTypeName name="com.example.sympmeds.R.string"/>
+<fullyQualifiedTypeName name="com.example.sympmeds.R.id"/>
+<fullyQualifiedTypeName name="android.R"/>
+<fullyQualifiedTypeName name="android.R.layout"/>
+</qualifiedTypeNameHistroy>
