@@ -16,7 +16,7 @@
     <string name="symptom_description">description of symptom</string>
     <string name="drug_instructions">Choose a drug from the drop-down list and then push the Get Info button to pull up the information on the drug.</string>
     <string name="get_info">Get Info</string>
-    <string name="medications">Medications</string>
+	<string name="end">/////</string>
     
     <string name="title_activity_drug_info">DrugInfo</string>
     <string name="drug_name">name of drug</string>
@@ -24,5 +24,6 @@
     <string name="side_effects_label">Side-Effects drug might have:</string>
     <string name="directions_label">Directions of use:</string>
     <string name="unknown">unknown</string>
+    <string name="medications">Medications</string>
 
 </resources>

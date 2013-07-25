@@ -76,8 +76,9 @@ public final class R {
         public static final int directions_label=0x7f060012;
         public static final int drug_instructions=0x7f06000b;
         public static final int drug_name=0x7f06000f;
+        public static final int end=0x7f06000d;
         public static final int get_info=0x7f06000c;
-        public static final int medications=0x7f06000d;
+        public static final int medications=0x7f060014;
         public static final int search=0x7f060006;
         public static final int side_effects_label=0x7f060011;
         public static final int start=0x7f060003;

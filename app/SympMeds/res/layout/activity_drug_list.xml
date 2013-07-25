@@ -52,6 +52,7 @@
         android:layout_alignLeft="@+id/drug_spinner"
         android:layout_below="@+id/drug_spinner"
         android:layout_marginTop="18dp"
-        android:text="@string/get_info" />
+        android:text="@string/get_info"
+        android:onClick="getInfo" />
 
 </RelativeLayout>
