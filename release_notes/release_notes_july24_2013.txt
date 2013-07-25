@@ -1,0 +1,15 @@
+Release notes for July 24, 2013
+Redid app from scratch because of the naming mistakes in the original
+	All four activities are up and running
+Plan for next releases:
+	-Clean up code (refractoring)
+		-fix the break statement in the onCreate() method of the DrugList class
+		-get the magic numbers into constant variables
+		-document code
+		-check font sizes
+	-implement the test suite
+	-expand database (atleast 10-15 medicines)
+	-clean up UI
+		-add dummy button for searching nearest pharmacy
+	-user stories
+
