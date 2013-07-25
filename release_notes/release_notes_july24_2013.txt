@@ -1,7 +1,0 @@
-Release Notes July 24
-Had to redo app - have all four activities made and implemented (working too!!!)
-Still to do before final release:
-	-clean up code (refractoring)
-	-Implement the testing suite
-	-Increase Database excel file
-	-Clean up UI
