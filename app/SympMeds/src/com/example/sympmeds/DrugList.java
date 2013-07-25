@@ -91,11 +91,11 @@ public class DrugList extends Activity {
         text = cell.getContents();
         TextView sympDesc = (TextView) findViewById(R.id.sympDesc_textView);
         sympDesc.setText(text);
-        //Log.i("SY")
+        Log.i("SYMPMEDS", "textViews worked");
 		
         //enter array into spinner
 		ArrayList<String> arrayList = new ArrayList<String>();
-		for(int j = 1; j < sheet.getColumns(); j++) {
+		for(int j = 2; j < sheet.getColumns(); j++) {
 			cell = sheet.getCell(j, i);
 			text = cell.getContents();
 			if (text.equals(R.string.end)) {
@@ -104,11 +104,13 @@ public class DrugList extends Activity {
 			arrayList.add(text);
 			//Log.i("SYMPMEDS", text + "\t" + i);
 		}
+		Log.i("SYMPMEDS", "array is set");
 		String[] array = arrayList.toArray(new String[arrayList.size()]);
-		Spinner spinner = (Spinner) findViewById(R.id.symptom_spinner);
+		Spinner spinner = (Spinner) findViewById(R.id.drug_spinner);
 		ArrayAdapter<CharSequence> adapter = new ArrayAdapter<CharSequence>(this, android.R.layout.simple_spinner_item, array);
 		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-		spinner.setAdapter(adapter);	
+		spinner.setAdapter(adapter);
+		Log.i("SYMPMEDS", "spinner works");
 	}
 
     /**
