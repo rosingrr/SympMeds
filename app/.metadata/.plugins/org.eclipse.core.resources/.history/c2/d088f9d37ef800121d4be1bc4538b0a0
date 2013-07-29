@@ -20,8 +20,6 @@ import android.widget.Spinner;
 
 public class SymptomList extends Activity {
 	public final static String DRUG_LIST = "com.example.sympmeds.LIST";
-	public final static int SYMPTOM_SHEET = 0;
-	public final static int STARTING_ROW = 1;
 
 	/**onCreate() is called when the SymptomList activity is started, which is when the
 	 * Start button from the MainActivity is pushed.
@@ -32,7 +30,7 @@ public class SymptomList extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_symptom_list);
 		
-		//open the Database excel file from assets folder
+		//open excel file and get symptom sheet
 		AssetManager assetManager = getResources().getAssets();
 		InputStream inputStream = null;
 		try{
@@ -56,21 +54,19 @@ public class SymptomList extends Activity {
 			//Log.e("SYMPMEDS", "error 3");
 			e.printStackTrace();
 		}
-		//close input stream
 		try {
 			inputStream.close();
 			//Log.v("SYMPMEDS", "inputStream.close() worked");
 		} catch (IOException e) {
 			//Log.e("SYMPMEDS", "error 4");
-			e.printStackTrace();
+			//e.printStackTrace();
 		}
-		//get symptom sheet from Database file
-		Sheet sheet = wb.getSheet(SYMPTOM_SHEET);
+		Sheet sheet = wb.getSheet(0);
 		//Log.v("SYMPMEDS", sheet.getName());
 		
         //enter array into spinner
 		ArrayList<String> arrayList = new ArrayList<String>();
-		for(int i = STARTING_ROW; i < sheet.getRows(); i++){
+		for(int i = 1; i < sheet.getRows(); i++){
 			Cell cell = sheet.getCell(0, i);
 			String text = cell.getContents();
 			arrayList.add(text);
