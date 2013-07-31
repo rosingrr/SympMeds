@@ -13,8 +13,7 @@ import android.view.Menu;
 import android.view.View;
 
 public class MainActivity extends Activity {
-	//holds the database excel file as a public variable so that it doesn't have to be constantly opened
-	public static Workbook database;
+	public Workbook database;
 
 	/**onCreate() is called when the MainActivity activity is started,
 	 * which is at the start of the application.
