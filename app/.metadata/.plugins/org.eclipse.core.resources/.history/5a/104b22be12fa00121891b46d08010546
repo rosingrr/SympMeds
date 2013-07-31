@@ -22,35 +22,39 @@ public class MainActivity extends Activity {
 	 */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-		//this is default code
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         
 		//open the Database excel file from assets folder
-        //open assetManager
 		AssetManager assetManager = getResources().getAssets();
 		InputStream inputStream = null;
 		try{
-			//open Database file in inputStream
 			inputStream = assetManager.open("Database.xls");
 		} catch(IOException e) {
+			//Log.e("SYMPMEDS", "error 1");
 			e.printStackTrace();
 		}
+		//Log.v("SYMPMEDS", inputStream.toString());
+		database = null;
 		try{
 			try {
-				//save workbook from file into public variable
 				database = Workbook.getWorkbook(inputStream);
+				//Log.v("SYMPMEDS", "wb = workbook worked");
 
 			} catch (IOException e) {
+				//Log.e("SYMPMEDS", "error 2");
 				e.printStackTrace();
 			}
 		} catch(BiffException e) {
+			//Log.e("SYMPMEDS", "error 3");
 			e.printStackTrace();
 		}
+		//close input stream
 		try {
-			//close input stream
 			inputStream.close();
+			//Log.v("SYMPMEDS", "inputStream.close() worked");
 		} catch (IOException e) {
+			//Log.e("SYMPMEDS", "error 4");
 			e.printStackTrace();
 		}
     }
@@ -69,7 +73,7 @@ public class MainActivity extends Activity {
      * It calls up the SymptomList activity.
      */
     public void start (View view) {
-    	// Do something in response to button
+    	// Do something in response to button}
 		Intent intent = new Intent(this, SymptomList.class);
 		startActivity(intent);
     }

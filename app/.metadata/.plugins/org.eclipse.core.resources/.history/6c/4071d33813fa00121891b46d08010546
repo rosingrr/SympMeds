@@ -22,23 +22,20 @@ public class MainActivity extends Activity {
 	 */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-		//this is default code
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         
 		//open the Database excel file from assets folder
-        //open assetManager
 		AssetManager assetManager = getResources().getAssets();
 		InputStream inputStream = null;
 		try{
-			//open Database file in inputStream
 			inputStream = assetManager.open("Database.xls");
 		} catch(IOException e) {
 			e.printStackTrace();
 		}
+		database = null;
 		try{
 			try {
-				//save workbook from file into public variable
 				database = Workbook.getWorkbook(inputStream);
 
 			} catch (IOException e) {
@@ -47,8 +44,8 @@ public class MainActivity extends Activity {
 		} catch(BiffException e) {
 			e.printStackTrace();
 		}
+		//close input stream
 		try {
-			//close input stream
 			inputStream.close();
 		} catch (IOException e) {
 			e.printStackTrace();

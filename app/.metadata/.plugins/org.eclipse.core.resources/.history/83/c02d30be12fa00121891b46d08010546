@@ -29,7 +29,6 @@ public class DrugInfo extends Activity {
 
 		setContentView(R.layout.activity_drug_info);
 
-		//get medication sheet from the database variable
 		Sheet sheet = MainActivity.database.getSheet(MEDICATION_SHEET);
 
 		//finds the correct drug
@@ -39,7 +38,6 @@ public class DrugInfo extends Activity {
 		for(drugNumber = STARTING_ROW; drugNumber < sheet.getRows(); drugNumber++) {
 			cell = sheet.getCell(DRUG_NAME_COL, drugNumber);
 			text = cell.getContents();
-			//if it is the correct drug, leave the for-loop
 			if (drug.equals(text)) {
 				break;
 			}

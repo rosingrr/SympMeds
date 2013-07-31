@@ -7,6 +7,7 @@ import jxl.Sheet;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+//import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -16,7 +17,7 @@ public class SymptomList extends Activity {
 	public final static String DRUG_LIST = "com.example.sympmeds.LIST";
 	private final static int SYMPTOM_SHEET = 0;
 	private final static int STARTING_ROW = 1;
-	private final static int SYMPTOM_NAME_COL = 0;
+	private final static int SYMPTOM_COL = 0;
 
 	/**onCreate() is called when the SymptomList activity is started, which is when the
 	 * Start button from the MainActivity is pushed.
@@ -27,23 +28,24 @@ public class SymptomList extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_symptom_list);
 		
-		//get symptom sheet from the database variable
+		//get symptom sheet from Database file
 		Sheet sheet = MainActivity.database.getSheet(SYMPTOM_SHEET);
+		//Log.v("SYMPMEDS", sheet.getName());
 		
-        //put the list of symptoms into an array
+        //enter array into spinner
 		ArrayList<String> arrayList = new ArrayList<String>();
 		for(int i = STARTING_ROW; i < sheet.getRows(); i++){
-			Cell cell = sheet.getCell(SYMPTOM_NAME_COL, i);
+			Cell cell = sheet.getCell(SYMPTOM_COL, i);
 			String text = cell.getContents();
 			arrayList.add(text);
 		}
-		
-        //enter array into spinner
+		//Log.v("SYMPMEDS", "array is set");
 		String[] array = arrayList.toArray(new String[arrayList.size()]);
 		Spinner spinner = (Spinner) findViewById(R.id.symptom_spinner);
 		ArrayAdapter<CharSequence> adapter = new ArrayAdapter<CharSequence>(this, android.R.layout.simple_spinner_item, array);
 		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		spinner.setAdapter(adapter);
+		//Log.v("SYMPMEDS", "spinner works");
 	}
 
     /**
@@ -61,11 +63,12 @@ public class SymptomList extends Activity {
      * what is selected from the spinner in this activity.
      */
     public void search (View view) {
-    	// Do something in response to button
+    	// Do something in response to button}
 		Intent intent = new Intent(this, DrugList.class);
 		Spinner spinner = (Spinner) findViewById(R.id.symptom_spinner);
 		String text = spinner.getSelectedItem().toString();
 		intent.putExtra(DRUG_LIST, text);
+		//Log.v("SYMPMEDS", "drugList activity starting");
 		startActivity(intent);
     }
 }

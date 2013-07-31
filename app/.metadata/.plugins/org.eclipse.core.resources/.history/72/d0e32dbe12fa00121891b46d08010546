@@ -34,7 +34,6 @@ public class DrugList extends Activity {
 
 		setContentView(R.layout.activity_drug_list);
 
-		//get symptom sheet from the database variable
 		Sheet sheet = MainActivity.database.getSheet(SYMPTOM_SHEET);
 
 		//finds the correct symptom
@@ -44,35 +43,29 @@ public class DrugList extends Activity {
 		for(symptomNumber = STARTING_ROW; symptomNumber < sheet.getRows(); symptomNumber++) {
 			cell = sheet.getCell(SYMPTOM_NAME_COL, symptomNumber);
 			text = cell.getContents();
-			//if it is the correct symptom, leave the for-loop
 			if (symptom.equals(text)) {
 				break;
 			}
 		}
 
 		//enters strings into textViews
-		//symptom name
         TextView sympName = (TextView) findViewById(R.id.sympName_textView);
         sympName.setText(text);
-        //symptom description
         cell = sheet.getCell(SYMPTOM_DESC_COL, symptomNumber);
         text = cell.getContents();
         TextView sympDesc = (TextView) findViewById(R.id.sympDesc_textView);
         sympDesc.setText(text);
 
-        //put the list of drugs that treat the symptom into an array
+        //enter array into spinner
 		ArrayList<String> arrayList = new ArrayList<String>();
 		for(int drugNumber = STARTING_COL; drugNumber < sheet.getColumns(); drugNumber++) {
 			cell = sheet.getCell(drugNumber, symptomNumber);
 			text = cell.getContents();
-			//if the list of drugs ends prematurely(list is smaller than a list from another symptom), leave the for-loop
 			if (text.equals("/////")) {
 				break;
 			}
 			arrayList.add(text);
 		}
-		
-		//enter array into spinner
 		String[] array = arrayList.toArray(new String[arrayList.size()]);
 		Spinner spinner = (Spinner) findViewById(R.id.drug_spinner);
 		ArrayAdapter<CharSequence> adapter = new ArrayAdapter<CharSequence>(this, android.R.layout.simple_spinner_item, array);

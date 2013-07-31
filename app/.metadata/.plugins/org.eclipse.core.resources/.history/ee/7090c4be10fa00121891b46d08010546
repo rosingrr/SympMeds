@@ -29,17 +29,15 @@ public class DrugInfo extends Activity {
 
 		setContentView(R.layout.activity_drug_info);
 
-		//get medication sheet from the database variable
 		Sheet sheet = MainActivity.database.getSheet(MEDICATION_SHEET);
 
 		//finds the correct drug
-		int drugNumber;
+		int drugNum;
 		Cell cell;
 		String text = "";
-		for(drugNumber = STARTING_ROW; drugNumber < sheet.getRows(); drugNumber++) {
-			cell = sheet.getCell(DRUG_NAME_COL, drugNumber);
+		for(drugNum = STARTING_ROW; drugNum < sheet.getRows(); drugNum++) {
+			cell = sheet.getCell(DRUG_NAME_COL, drugNum);
 			text = cell.getContents();
-			//if it is the correct drug, leave the for-loop
 			if (drug.equals(text)) {
 				break;
 			}
@@ -50,17 +48,17 @@ public class DrugInfo extends Activity {
         TextView drugName = (TextView) findViewById(R.id.drugName_textView);
         drugName.setText(text);
         //symptoms
-        cell = sheet.getCell(SYMPTOMS_COL, drugNumber);
+        cell = sheet.getCell(SYMPTOMS_COL, drugNum);
         text = cell.getContents();
         TextView drugSymp = (TextView) findViewById(R.id.drugSymp_textView);
         drugSymp.setText(text);
         //side-effects
-        cell = sheet.getCell(SIDE_EFFECTS_COL, drugNumber);
+        cell = sheet.getCell(SIDE_EFFECTS_COL, drugNum);
         text = cell.getContents();
         TextView drugSideEffs = (TextView) findViewById(R.id.drugSideEffects_textView);
         drugSideEffs.setText(text);
         //directions of use
-        cell = sheet.getCell(DIRECTIONS_OF_USE_COL, drugNumber);
+        cell = sheet.getCell(DIRECTIONS_OF_USE_COL, drugNum);
         text = cell.getContents();
         TextView drugDir = (TextView) findViewById(R.id.drugDirections_textView);
         drugDir.setText(text);
