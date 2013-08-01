@@ -1,0 +1,3 @@
+Finished all implementation of app.
+Still working on testing and increasing database.
+Have problem getting code coverage working.

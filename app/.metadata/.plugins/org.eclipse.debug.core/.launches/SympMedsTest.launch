@@ -10,14 +10,14 @@
 <stringAttribute key="com.android.ide.eclipse.adt.testSize" value="All Tests"/>
 <booleanAttribute key="com.android.ide.eclipse.adt.wipedata" value="false"/>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
-<listEntry value="/SympMedsTests"/>
+<listEntry value="/SympMedsTests/src/com/example/sympmeds/test/DrugListTest.java"/>
 </listAttribute>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
-<listEntry value="4"/>
+<listEntry value="1"/>
 </listAttribute>
-<stringAttribute key="org.eclipse.jdt.junit.CONTAINER" value="=SympMedsTests"/>
+<stringAttribute key="org.eclipse.jdt.junit.CONTAINER" value=""/>
 <stringAttribute key="org.eclipse.jdt.junit.TESTNAME" value=""/>
 <stringAttribute key="org.eclipse.jdt.junit.TEST_KIND" value="org.eclipse.jdt.junit.loader.junit3"/>
-<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value=""/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.example.sympmeds.test.DrugListTest"/>
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="SympMedsTests"/>
 </launchConfiguration>
