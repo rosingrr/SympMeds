@@ -1,0 +1,7 @@
+package com.example.sympmeds.test;
+
+import android.test.ActivityInstrumentationTestCase2;
+
+public class MainActivityTest extends ActivityInstrumentationTestCase2<T> {
+
+}
