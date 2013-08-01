@@ -1,3 +1,20 @@
 Finished all implementation of app.
+Did some refactoring:
+	changed the onCreate method for the following classes:
+		MainActivity.java
+			added public variable that holds the workbook from the database file so the other activities don't have to open the file each time
+		SymptomList.java
+			calls on the MainActivity's public variable instead of opening the database
+			replaced any "magic numbers" with constants
+			changed some variable names to make them more descriptive
+		DrugList.java
+			same as above
+		DrugInfo.java
+			same as above
 Still working on testing and increasing database.
 Have problem getting code coverage working.
+
+comments:
+1)check in UI/Database Changes from Milena
+2)complete test suite
+3)get code coverage working
