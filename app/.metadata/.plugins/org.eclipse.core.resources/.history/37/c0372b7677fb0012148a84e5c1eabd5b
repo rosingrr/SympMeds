@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SympMeds</string>
+    <string name="action_settings">Settings</string>
+    <string name="nearest_pharmacy">Nearest Pharmacy</string>
+    <string name="welcome">This app is not meant to be used as a replacement of a doctor. If symptoms become severe and/ or persistent we recommend you see a doctor immediately.</string>
+    <string name="start">Get Started</string>
+    
+    <string name="title_activity_symptom_list">SymptomList</string>
+    <string name="symptom_instructions">Choose the symptom you are experiencing from the drop-down list and then push the Search button to get a list of drugs that treats that symptom.</string>
+    <string name="search">Search</string>
+    <string name="symptoms">Symptoms</string>
+    
+    <string name="title_activity_drug_list">DrugList</string>
+    <string name="symptom_name">name of symptom</string>
+    <string name="symptom_description">description of symptom</string>
+    <string name="drug_instructions">Choose a drug from the drop-down list and then push the Get Info button to pull up the information on the drug.</string>
+    <string name="get_info">Get Info</string>
+    <string name="end">/////</string>
+    
+    <string name="title_activity_drug_info">DrugInfo</string>
+    <string name="drug_name">name of drug</string>
+    <string name="symptoms_label">Symptoms the drug treats:</string>
+    <string name="side_effects_label">Side-Effects drug might have:</string>
+    <string name="directions_label">Directions of use:</string>
+    <string name="unknown">unknown</string>
+    <string name="medications">Medications</string>
+
+</resources>
