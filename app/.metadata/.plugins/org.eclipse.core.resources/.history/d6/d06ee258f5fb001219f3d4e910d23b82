@@ -30,11 +30,9 @@ public class C_DrugListTest extends ActivityInstrumentationTestCase2<DrugList> {
 		super.setUp(); // calls the superclass's setUp()
 		Log.d("SYMPMEDS", "super.setUp() worked");
 		Intent intent = new Intent();
-		Log.d("SYMPMEDS", "new Intent worked");
 		intent.putExtra("com.example.sympmeds.LIST", "Fever");
-		Log.d("SYMPMEDS", "putExtra() worked");
-		setActivityIntent(intent);
-		Log.d("SYMPMEDS", "setActivityIntent() worked");
+		setActivityInitialTouchMode(false);
+		Log.d("SYMPMEDS", "setActivityInitialTouchMode(false) worked");
         mActivity = this.getActivity(); //DrugList
         Log.d("SYMPMEDS", "mActivity worked");
         mViewName = (TextView) mActivity.findViewById(com.example.sympmeds.R.id.sympName_textView);

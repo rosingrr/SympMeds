@@ -1,6 +1,5 @@
 package com.example.sympmeds.test;
 
-import android.content.Intent;
 import android.test.ActivityInstrumentationTestCase2;
 import android.util.Log;
 import android.widget.TextView;
@@ -29,12 +28,6 @@ public class C_DrugListTest extends ActivityInstrumentationTestCase2<DrugList> {
 	protected void setUp() throws Exception {
 		super.setUp(); // calls the superclass's setUp()
 		Log.d("SYMPMEDS", "super.setUp() worked");
-		Intent intent = new Intent();
-		Log.d("SYMPMEDS", "new Intent worked");
-		intent.putExtra("com.example.sympmeds.LIST", "Fever");
-		Log.d("SYMPMEDS", "putExtra() worked");
-		setActivityIntent(intent);
-		Log.d("SYMPMEDS", "setActivityIntent() worked");
         mActivity = this.getActivity(); //DrugList
         Log.d("SYMPMEDS", "mActivity worked");
         mViewName = (TextView) mActivity.findViewById(com.example.sympmeds.R.id.sympName_textView);

@@ -86,6 +86,7 @@ public final class R {
         public static final int symptom_name=0x7f06000c;
         public static final int symptoms=0x7f060008;
         public static final int symptoms_label=0x7f060013;
+        public static final int test_symptom=0x7f060018;
         public static final int title_activity_drug_info=0x7f060011;
         public static final int title_activity_drug_list=0x7f06000b;
         public static final int title_activity_symptom_list=0x7f060005;
