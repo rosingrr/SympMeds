@@ -29,6 +29,7 @@ public class C_DrugListTest extends ActivityInstrumentationTestCase2<DrugList> {
 		super.setUp(); // calls the superclass's setUp()
 		Log.d("SYMPMEDS", "super.setUp() worked");
         mActivity = this.getActivity(); //DrugList
+        mActivity = this.
         Log.d("SYMPMEDS", "mActivity worked");
         mViewName = (TextView) mActivity.findViewById(com.example.sympmeds.R.id.sympName_textView);
         Log.d("SYMPMEDS", "mViewName worked");
