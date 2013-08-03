@@ -2627,3 +2627,148 @@ java.lang.ClassCastException: android.widget.TextView cannot be cast to android.
 
 !ENTRY com.android.ide.eclipse.adt 4 0 2013-08-02 09:56:57.395
 !MESSAGE activity_symptom_list.xml: Dimension "18" in attribute "textSize" is missing unit!
+!SESSION 2013-08-02 16:04:30.834 -----------------------------------------------
+eclipse.buildId=v21.1.0-569685
+java.version=1.7.0_21
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product com.android.ide.eclipse.adt.package.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.android.ide.eclipse.adt.package.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2013-08-02 16:06:49.074
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2013-08-02 16:06:49.181
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Randy'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-08-02 16:16:05.879
+!MESSAGE activity_main.xml: Dimension "25" in attribute "textSize" is missing unit!
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-08-02 16:17:09.302
+!MESSAGE activity_drug_list.xml: Dimension "19" in attribute "textSize" is missing unit!
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-08-02 16:17:09.312
+!MESSAGE activity_drug_list.xml: Dimension "15" in attribute "textSize" is missing unit!
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-08-02 16:17:09.319
+!MESSAGE activity_drug_list.xml: Dimension "16" in attribute "textSize" is missing unit!
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-08-02 16:22:58.743
+!MESSAGE activity_symptom_list.xml: Dimension "18" in attribute "textSize" is missing unit!
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-08-02 16:22:58.748
+!MESSAGE activity_symptom_list.xml: Dimension "18" in attribute "textSize" is missing unit!
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2013-08-02 16:23:57.678
+!MESSAGE activity_symptom_list.xml: "@string/18" in attribute "textSize" is not a valid format.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2013-08-02 16:23:57.683
+!MESSAGE activity_symptom_list.xml: "@string/18" in attribute "textSize" is not a valid format.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2013-08-02 16:26:40.376
+!MESSAGE activity_main.xml: "@string/25" in attribute "textSize" is not a valid format.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2013-08-02 16:27:15.500
+!MESSAGE activity_symptom_list.xml: "@string/18" in attribute "textSize" is not a valid format.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2013-08-02 16:27:15.505
+!MESSAGE activity_symptom_list.xml: "@string/18" in attribute "textSize" is not a valid format.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2013-08-02 16:29:00.881
+!MESSAGE activity_symptom_list.xml: "@string/18" in attribute "textSize" is not a valid format.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2013-08-02 16:29:00.887
+!MESSAGE activity_symptom_list.xml: "@string/18" in attribute "textSize" is not a valid format.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2013-08-02 16:29:50.974
+!MESSAGE activity_symptom_list.xml: "@string/18" in attribute "textSize" is not a valid format.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2013-08-02 16:29:50.979
+!MESSAGE activity_symptom_list.xml: "@string/18" in attribute "textSize" is not a valid format.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2013-08-02 16:30:20.100
+!MESSAGE activity_symptom_list.xml: "@string/18" in attribute "textSize" is not a valid format.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2013-08-02 16:30:20.104
+!MESSAGE activity_symptom_list.xml: "@string/18" in attribute "textSize" is not a valid format.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2013-08-02 16:30:26.919
+!MESSAGE activity_main.xml: "@string/25" in attribute "textSize" is not a valid format.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2013-08-02 16:31:39.199
+!MESSAGE activity_drug_list.xml: "@string/19" in attribute "textSize" is not a valid format.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2013-08-02 16:31:39.204
+!MESSAGE activity_drug_list.xml: "@string/15" in attribute "textSize" is not a valid format.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2013-08-02 16:31:39.208
+!MESSAGE activity_drug_list.xml: "@string/16" in attribute "textSize" is not a valid format.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2013-08-02 16:33:01.187
+!MESSAGE activity_symptom_list.xml: "@string/18" in attribute "textSize" is not a valid format.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2013-08-02 16:33:01.192
+!MESSAGE activity_symptom_list.xml: "@string/18" in attribute "textSize" is not a valid format.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2013-08-02 16:33:35.399
+!MESSAGE activity_symptom_list.xml: Couldn't resolve resource @string/symptom_instructions1
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2013-08-02 16:33:35.402
+!MESSAGE activity_symptom_list.xml: "@string/18" in attribute "textSize" is not a valid format.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2013-08-02 16:33:35.407
+!MESSAGE activity_symptom_list.xml: "@string/18" in attribute "textSize" is not a valid format.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2013-08-02 16:33:46.487
+!MESSAGE activity_symptom_list.xml: "@string/18" in attribute "textSize" is not a valid format.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2013-08-02 16:33:46.492
+!MESSAGE activity_symptom_list.xml: "@string/18" in attribute "textSize" is not a valid format.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2013-08-02 16:34:21.444
+!MESSAGE activity_symptom_list.xml: "@string/18" in attribute "textSize" is not a valid format.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2013-08-02 16:34:21.448
+!MESSAGE activity_symptom_list.xml: "@string/18" in attribute "textSize" is not a valid format.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2013-08-02 16:35:19.580
+!MESSAGE activity_symptom_list.xml: "@string/18" in attribute "textSize" is not a valid format.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2013-08-02 16:35:19.585
+!MESSAGE activity_symptom_list.xml: "@string/18" in attribute "textSize" is not a valid format.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2013-08-02 16:35:19.966
+!MESSAGE activity_symptom_list.xml: "@string/18" in attribute "textSize" is not a valid format.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2013-08-02 16:35:19.972
+!MESSAGE activity_symptom_list.xml: "@string/18" in attribute "textSize" is not a valid format.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2013-08-02 16:37:48.147
+!MESSAGE activity_symptom_list.xml: "@string/18" in attribute "textSize" is not a valid format.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2013-08-02 16:37:51.773
+!MESSAGE activity_symptom_list.xml: "@string/18" in attribute "textSize" is not a valid format.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2013-08-02 16:37:54.355
+!MESSAGE activity_symptom_list.xml: "@string/18" in attribute "textSize" is not a valid format.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2013-08-02 16:37:55.173
+!MESSAGE activity_symptom_list.xml: "@string/18" in attribute "textSize" is not a valid format.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2013-08-02 16:40:06.094
+!MESSAGE activity_symptom_list.xml: "@string/18" in attribute "textSize" is not a valid format.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2013-08-02 16:40:09.755
+!MESSAGE activity_symptom_list.xml: "@string/18" in attribute "textSize" is not a valid format.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2013-08-02 23:24:39.052
+!MESSAGE activity_symptom_list.xml: "@string/18" in attribute "textSize" is not a valid format.

@@ -23,12 +23,17 @@ public final class R {
          */
         public static final int activity_horizontal_margin=0x7f050000;
         public static final int activity_vertical_margin=0x7f050001;
+        public static final int font_15=0x7f050002;
+        public static final int font_16=0x7f050003;
+        public static final int font_18=0x7f050004;
+        public static final int font_19=0x7f050005;
+        public static final int font_25=0x7f050006;
     }
     public static final class drawable {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int action_settings=0x7f090014;
+        public static final int action_settings=0x7f090013;
         public static final int directionsLabel_textView=0x7f090006;
         public static final int drugDirections_textView=0x7f090007;
         public static final int drugInfoNearest_button=0x7f090000;
@@ -39,15 +44,14 @@ public final class R {
         public static final int drugSymp_textView=0x7f090003;
         public static final int drug_spinner=0x7f09000c;
         public static final int getInfo_button=0x7f09000d;
-        public static final int search_button=0x7f090013;
+        public static final int search_button=0x7f090010;
         public static final int sideEffectsLabel_textView=0x7f090004;
         public static final int start_button=0x7f09000e;
         public static final int sympDesc_textView=0x7f09000a;
-        public static final int sympInstr_textView=0x7f090011;
+        public static final int sympInstr_textView=0x7f090012;
         public static final int sympLabel_textView=0x7f090002;
-        public static final int sympListNearest_button=0x7f090010;
         public static final int sympName_textView=0x7f090009;
-        public static final int symptom_spinner=0x7f090012;
+        public static final int symptom_spinner=0x7f090011;
         public static final int welcom_textView=0x7f09000f;
     }
     public static final class layout {
@@ -63,27 +67,29 @@ public final class R {
         public static final int symptom_list=0x7f080003;
     }
     public static final class string {
+        public static final int Button=0x7f06000a;
         public static final int action_settings=0x7f060001;
         public static final int app_name=0x7f060000;
-        public static final int directions_label=0x7f060013;
-        public static final int drug_instructions=0x7f06000c;
-        public static final int drug_name=0x7f060010;
-        public static final int end=0x7f06000e;
-        public static final int get_info=0x7f06000d;
-        public static final int medications=0x7f060015;
+        public static final int directions_label=0x7f060015;
+        public static final int drug_instructions=0x7f06000e;
+        public static final int drug_name=0x7f060012;
+        public static final int end=0x7f060010;
+        public static final int get_info=0x7f06000f;
+        public static final int medications=0x7f060017;
+        public static final int nearest_instructions=0x7f060009;
         public static final int nearest_pharmacy=0x7f060002;
         public static final int search=0x7f060007;
-        public static final int side_effects_label=0x7f060012;
+        public static final int side_effects_label=0x7f060014;
         public static final int start=0x7f060004;
-        public static final int symptom_description=0x7f06000b;
+        public static final int symptom_description=0x7f06000d;
         public static final int symptom_instructions=0x7f060006;
-        public static final int symptom_name=0x7f06000a;
+        public static final int symptom_name=0x7f06000c;
         public static final int symptoms=0x7f060008;
-        public static final int symptoms_label=0x7f060011;
-        public static final int title_activity_drug_info=0x7f06000f;
-        public static final int title_activity_drug_list=0x7f060009;
+        public static final int symptoms_label=0x7f060013;
+        public static final int title_activity_drug_info=0x7f060011;
+        public static final int title_activity_drug_list=0x7f06000b;
         public static final int title_activity_symptom_list=0x7f060005;
-        public static final int unknown=0x7f060014;
+        public static final int unknown=0x7f060016;
         public static final int welcome=0x7f060003;
     }
     public static final class style {

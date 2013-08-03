@@ -28,7 +28,7 @@
         android:text="@string/symptom_name"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="@color/white"
-        android:textSize="19" />
+        android:textSize="@dimen/font_19" />
 
     <TextView
         android:id="@+id/sympDesc_textView"
@@ -40,7 +40,7 @@
         android:text="@string/symptom_description"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:textColor="@color/white"
-        android:textSize="15" />
+        android:textSize="@dimen/font_15" />
 
     <TextView
         android:id="@+id/drugInstr_textView"
@@ -51,7 +51,7 @@
         android:layout_marginTop="29dp"
         android:text="@string/drug_instructions"
         android:textColor="@color/white"
-        android:textSize="16" />
+        android:textSize="@dimen/font_16" />
 
     <Spinner
         android:id="@+id/drug_spinner"

@@ -30,6 +30,6 @@
         android:gravity="center"
         android:text="@string/welcome"
         android:textColor="@color/white"
-        android:textSize="25" />
+        android:textSize="@dimen/font_25" />
 
 </RelativeLayout>

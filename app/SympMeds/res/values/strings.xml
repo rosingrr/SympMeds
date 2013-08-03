@@ -11,7 +11,7 @@
     <string name="symptom_instructions">To look up over-the-counter medication based on symptom, please choose from the drop down list below. Then click on the "Find" button.</string>
     <string name="search">Find</string>
     <string name="symptoms">Symptoms</string>
-    <string name="symptom_instructions1">The button below searches for the closest pharmacy location to you. This button may be used at any point after opening the application.</string>
+    <string name="nearest_instructions">The button below searches for the closest pharmacy location to you. This button may be used at any point after opening the application.</string>
     <string name="Button">Nearest Pharmacy</string>
     
     <string name="title_activity_drug_list">DrugList</string>

@@ -10,16 +10,6 @@
     tools:context=".SymptomList" >
 
     <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/TextView01"
-        android:layout_below="@+id/TextView01"
-        android:layout_marginTop="34dp"
-        android:text="@string/Button"
-        android:textColor="@color/white" />
-
-    <Button
         android:id="@+id/search_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -37,17 +27,6 @@
         android:layout_alignLeft="@+id/sympInstr_textView" />
 
     <TextView
-        android:id="@+id/TextView01"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/search_button"
-        android:layout_below="@+id/search_button"
-        android:layout_marginTop="20dp"
-        android:text="@string/symptom_instructions1"
-        android:textColor="@color/white"
-        android:textSize="18" />
-
-    <TextView
         android:id="@+id/sympInstr_textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -56,6 +35,6 @@
         android:layout_marginBottom="14dp"
         android:text="@string/symptom_instructions"
         android:textColor="@color/white"
-        android:textSize="18" />
+        android:textSize="@dimen/font_18" />
 
 </RelativeLayout>
