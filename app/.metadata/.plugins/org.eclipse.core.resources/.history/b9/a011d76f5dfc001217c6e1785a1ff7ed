@@ -10,7 +10,7 @@ import com.example.sympmeds.SymptomList;
 public class B_SymptomListTest extends ActivityInstrumentationTestCase2<SymptomList> {
     private SymptomList mActivity;		// the activity under test
     private TextView mViewSympInstr;			// the activity's TextView (for the instructions)
-    private Spinner mSpinnerSymp;	//the activity's Spinner (for the list of symptoms)
+    private Spinner mSympSpinner;	//the activity's Spinner (for the list of symptoms)
     private Button mButtonSearch;	//the activity's Search button
     
 	/**
@@ -29,7 +29,7 @@ public class B_SymptomListTest extends ActivityInstrumentationTestCase2<SymptomL
 		//initialize the activity and any widgets
         mActivity = this.getActivity(); //MainActivity
         mViewSympInstr = (TextView) mActivity.findViewById(com.example.sympmeds.R.id.sympInstr_textView);
-        mSpinnerSymp = (Spinner) mActivity.findViewById(com.example.sympmeds.R.id.symptom_spinner);
+        mSympSpinner = (Spinner) mActivity.findViewById(com.example.sympmeds.R.id.symptom_spinner);
         mButtonSearch = (Button) mActivity.findViewById(com.example.sympmeds.R.id.search_button);
 	}
 
@@ -38,7 +38,7 @@ public class B_SymptomListTest extends ActivityInstrumentationTestCase2<SymptomL
 	 */
     public void testPreconditions() {
     	assertNotNull(mViewSympInstr);
-    	assertNotNull(mSpinnerSymp);
+    	assertNotNull(mSympSpinner);
         assertNotNull(mButtonSearch);
     }
     

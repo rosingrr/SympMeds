@@ -1,0 +1,114 @@
+/**
+ * 
+ */
+package com.example.sympmeds.test;
+
+import android.content.Intent;
+import android.test.ActivityInstrumentationTestCase2;
+import android.widget.Button;
+import android.widget.TextView;
+
+import com.example.sympmeds.DrugInfo;
+
+/**
+ * @author Randy
+ *
+ */
+public class D_DrugInfoTest extends ActivityInstrumentationTestCase2<DrugInfo> {
+    private DrugInfo mActivity;		// the activity under test
+    private Button mButtonNearest;	//the button that leads to finding the nearest pharmacy
+    //textViews in the activity
+    private TextView mViewName;
+    private TextView mViewSympLabel;
+    private TextView mViewSymp;
+    private TextView mViewSideEffLabel;
+    private TextView mViewSideEff;
+    private TextView mViewDirLabel;
+    private TextView mViewDir;
+    // the original strings the textViews that get changed have before starting up
+    private String originalName;
+    private String originalUnknown;
+    
+	/**
+	 * @
+	 */
+	public D_DrugInfoTest() {
+		super(DrugInfo.class);
+	}
+
+	/* (non-Javadoc)
+	 * @see android.test.ActivityInstrumentationTestCase2#setUp()
+	 */
+	protected void setUp() throws Exception {
+		super.setUp(); // calls the superclass's setUp()
+		
+		//set up the DrugList class as if it was called from the DrugList class with Advil chosen from the spinner
+		Intent intent = new Intent();
+		intent.putExtra("com.example.sympmeds.INFO", "Advil");
+		setActivityIntent(intent);
+		
+		//initialize the activity and any widgets
+		mActivity = this.getActivity(); //MainActivity
+        mButtonNearest = (Button) mActivity.findViewById(com.example.sympmeds.R.id.drugInfoNearest_button);
+        mViewName = (TextView) mActivity.findViewById(com.example.sympmeds.R.id.drugName_textView);
+        mViewSympLabel = (TextView) mActivity.findViewById(com.example.sympmeds.R.id.sympLabel_textView);
+        mViewSymp = (TextView) mActivity.findViewById(com.example.sympmeds.R.id.drugSymp_textView);
+        mViewSideEffLabel = (TextView) mActivity.findViewById(com.example.sympmeds.R.id.sideEffectsLabel_textView);
+        mViewSideEff = (TextView) mActivity.findViewById(com.example.sympmeds.R.id.drugSideEffects_textView);
+        mViewDirLabel = (TextView) mActivity.findViewById(com.example.sympmeds.R.id.directionsLabel_textView);
+        mViewDir = (TextView) mActivity.findViewById(com.example.sympmeds.R.id.drugDirections_textView);
+        
+        //initialize the starting strings
+        originalName = mActivity.getString(com.example.sympmeds.R.string.drug_name);
+        originalUnknown = mActivity.getString(com.example.sympmeds.R.string.unknown);
+	}
+
+	/* 
+	 * makes sure all the widgets are not null
+	 */
+    public void testPreconditions() {
+        assertNotNull(mButtonNearest);
+        assertNotNull(mViewName);
+        assertNotNull(mViewSympLabel);
+        assertNotNull(mViewSymp);
+        assertNotNull(mViewSideEffLabel);
+        assertNotNull(mViewSideEff);
+        assertNotNull(mViewDirLabel);
+        assertNotNull(mViewDir);
+    }
+    
+    /* 
+	 * makes sure the textView with the drug's name is updated
+	 */
+    public void testTextDrugName() {
+        assertFalse(originalName.equals((String)mViewName.getText()));
+    }
+    
+    /* 
+	 * makes sure the textView with the drug's symptoms is updated
+	 */
+    public void testTextDurgSymp() {
+        assertFalse(originalUnknown.equals((String)mViewSymp.getText()));
+    }
+    
+    /* 
+	 * makes sure the textView with the drug's side effects is updated
+	 */
+    public void testTextDrugSideEff() {
+        assertFalse(originalUnknown.equals((String)mViewSideEff.getText()));
+    }
+    
+    /* 
+	 * makes sure the textView with the drug's directions is updated
+	 */
+    public void testTextDrugDir() {
+        assertFalse(originalUnknown.equals((String)mViewDir.getText()));
+    }
+    
+    /* (non-Javadoc)
+	 * @see android.test.ActivityInstrumentationTestCase2#tearDown()
+	 */
+	protected void tearDown() throws Exception {
+		super.tearDown();
+	}
+}

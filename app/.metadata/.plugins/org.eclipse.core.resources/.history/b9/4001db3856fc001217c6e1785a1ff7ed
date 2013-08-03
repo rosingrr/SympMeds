@@ -2,25 +2,17 @@ package com.example.sympmeds.test;
 
 import android.content.Intent;
 import android.test.ActivityInstrumentationTestCase2;
-import android.widget.Button;
-import android.widget.Spinner;
 import android.widget.TextView;
 
 import com.example.sympmeds.DrugList;
 
 public class C_DrugListTest extends ActivityInstrumentationTestCase2<DrugList> {
+
     private DrugList mActivity;		// the activity under test
-    private Spinner mSpinnerDrug;	//the spinner holding the drug names
-    //buttons in the activity
-    private Button mButtonNearest;	//the button that leads to finding the nearest pharmacy
-    private Button mButtonGetInfo;	//starts the next activity
-    //textViews in the activity
-    private TextView mViewName;			//for the symptom name
-    private TextView mViewDescription;			//for the symptom description
-    private TextView mViewDrugInstr;	//the instructions for the activity
-    // the original strings the textViews that get changed have before starting up
-    private String originalName;	//for the SymptomName textView
-    private String originalDesc;	//for the SymptomDescription textView
+    private TextView mViewName;			// the activity's TextView (for the symptom name)
+    private TextView mViewDescription;			// the activity's TextView (for the symptom description)
+    private String originalName;	// the original string the SymptomName textView has before starting up
+    private String originalDesc;	//the original string in the SymptomDescription textView
 
     
 	/**
@@ -35,36 +27,22 @@ public class C_DrugListTest extends ActivityInstrumentationTestCase2<DrugList> {
 	 */
 	protected void setUp() throws Exception {
 		super.setUp(); // calls the superclass's setUp()
-		
-		//set up the DrugList class as if it was called from the SymptomList class with Fever chosen from the spinner
 		Intent intent = new Intent();
 		intent.putExtra("com.example.sympmeds.LIST", "Fever");
 		setActivityIntent(intent);
-		
-		//initialize the activity and any widgets
         mActivity = this.getActivity(); //DrugList
-        mSpinnerDrug = (Spinner) mActivity.findViewById(com.example.sympmeds.R.id.drug_spinner);
-        mButtonNearest = (Button) mActivity.findViewById(com.example.sympmeds.R.id.drugListNearest_button);
-        mButtonGetInfo = (Button) mActivity.findViewById(com.example.sympmeds.R.id.getInfo_button);
         mViewName = (TextView) mActivity.findViewById(com.example.sympmeds.R.id.sympName_textView);
         mViewDescription = (TextView) mActivity.findViewById(com.example.sympmeds.R.id.sympDesc_textView);
-        mViewDrugInstr = (TextView) mActivity.findViewById(com.example.sympmeds.R.id.drugInstr_textView);
-        
-        //initialize the original text in the textViews from before the activity goes through the onCreate() method
         originalName = mActivity.getString(com.example.sympmeds.R.string.symptom_name);
         originalDesc = mActivity.getString(com.example.sympmeds.R.string.symptom_description);
 	}
 
 	/* 
-	 * makes sure all the widgets are not null
+	 * makes sure the textViews under test later are not null
 	 */
     public void testPreconditions() {
-    	assertNotNull(mSpinnerDrug);
-    	assertNotNull(mButtonNearest);
-    	assertNotNull(mButtonGetInfo);
         assertNotNull(mViewName);
         assertNotNull(mViewDescription);
-        assertNotNull(mViewDrugInstr);
     }
     
     /* 

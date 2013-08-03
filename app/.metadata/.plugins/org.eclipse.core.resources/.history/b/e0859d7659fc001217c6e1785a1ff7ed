@@ -1,0 +1,61 @@
+/**
+ * 
+ */
+package com.example.sympmeds.test;
+
+import android.test.ActivityInstrumentationTestCase2;
+import android.widget.Button;
+import android.widget.TextView;
+
+import com.example.sympmeds.DrugInfo;
+import com.example.sympmeds.MainActivity;
+
+/**
+ * @author Randy
+ *
+ */
+public class D_DrugInfoTest extends ActivityInstrumentationTestCase2<DrugInfo> {
+    private DrugInfo mActivity;		// the activity under test
+    //textViews in the activity
+    private TextView mViewWelcome;
+    // the original string the textViews have before starting up
+    private String original;
+    
+	/**
+	 * @
+	 */
+	public D_DrugInfoTest() {
+		super(DrugInfo.class);
+	}
+
+	/* (non-Javadoc)
+	 * @see android.test.ActivityInstrumentationTestCase2#setUp()
+	 */
+	protected void setUp() throws Exception {
+		super.setUp();
+        mActivity = this.getActivity(); //MainActivity
+        mViewWelcome = (TextView) mActivity.findViewById(com.example.sympmeds.R.id.welcom_textView);
+        original = mActivity.getString(com.example.sympmeds.R.string.welcome);	//the starting string of the textViews
+	}
+
+	/* 
+	 * makes sure the textViews under test later are not null
+	 */
+    public void testPreconditions() {
+        assertNotNull(mViewWelcome);
+    }
+    
+    /*
+     * makes sure the welcome_textView is not changed
+     */
+    public void testTextWelcome() {
+    	assert(original.equals((String)mViewWelcome.getText()));
+    }
+    
+	/* (non-Javadoc)
+	 * @see android.test.ActivityInstrumentationTestCase2#tearDown()
+	 */
+	protected void tearDown() throws Exception {
+		super.tearDown();
+	}
+}
