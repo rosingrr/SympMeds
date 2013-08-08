@@ -1,7 +1,0 @@
-package com.example.sympmeds.test;
-
-import android.test.ActivityInstrumentationTestCase2;
-
-public class SymptomListTest extends ActivityInstrumentationTestCase2<T> {
-
-}

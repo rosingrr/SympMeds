@@ -42,7 +42,7 @@ public class A_MainActivityTest extends ActivityInstrumentationTestCase2<MainAct
      * makes sure Start button is clickable
      */
     public void testStartButton() {
-    	assertTrue(mButtonStart.callOnClick());
+    	assert(mButtonStart.callOnClick());
     }
     
 	/* (non-Javadoc)

@@ -25,11 +25,9 @@ public class D_DrugInfoTest extends ActivityInstrumentationTestCase2<DrugInfo> {
     private TextView mViewSideEff;
     private TextView mViewDirLabel;
     private TextView mViewDir;
-    //string constants for what the textViews should display
-    private static final String EXPECTED_NAME = "Advil";
-    private static final String EXPECTED_SYMPTOM = "Fever";
-    private static final String EXPECTED_SIDE_EFF = "Ibuprofen may cause a severe allergic reaction, especially in people that are allergic to aspirin. This product also contains an NSAID, which may cause severe stomach bleeding.";
-    private static final String EXPECTED_DIRECTIONS = "Adults and children 12 years and over: take 1 tablet every 4 to 6 hours while symptoms persist. If pain of fever does not respond to 1 tablet, 2 tablets amy be used. Do not exceet 6 tablets in 24 hours, unless directed by doctor.";
+    // the original strings the textViews that get changed have before starting up
+    private String originalName;
+    private String originalUnknown;
     
 	/**
 	 * @
@@ -46,7 +44,7 @@ public class D_DrugInfoTest extends ActivityInstrumentationTestCase2<DrugInfo> {
 		
 		//set up the DrugList class as if it was called from the DrugList class with Advil chosen from the spinner
 		Intent intent = new Intent();
-		intent.putExtra("com.example.sympmeds.INFO", EXPECTED_NAME);
+		intent.putExtra("com.example.sympmeds.INFO", "Advil");
 		setActivityIntent(intent);
 		
 		//initialize the activity and any widgets
@@ -59,6 +57,10 @@ public class D_DrugInfoTest extends ActivityInstrumentationTestCase2<DrugInfo> {
         mViewSideEff = (TextView) mActivity.findViewById(com.example.sympmeds.R.id.drugSideEffects_textView);
         mViewDirLabel = (TextView) mActivity.findViewById(com.example.sympmeds.R.id.directionsLabel_textView);
         mViewDir = (TextView) mActivity.findViewById(com.example.sympmeds.R.id.drugDirections_textView);
+        
+        //initialize the starting strings
+        originalName = mActivity.getString(com.example.sympmeds.R.string.drug_name);
+        originalUnknown = mActivity.getString(com.example.sympmeds.R.string.unknown);
 	}
 
 	/* 
@@ -79,35 +81,35 @@ public class D_DrugInfoTest extends ActivityInstrumentationTestCase2<DrugInfo> {
 	 * makes sure the textView with the drug's name is updated
 	 */
     public void testTextDrugName() {
-        assertTrue(EXPECTED_NAME.equals((String)mViewName.getText()));
+        assertFalse(originalName.equals((String)mViewName.getText()));
     }
     
     /* 
 	 * makes sure the textView with the drug's symptoms is updated
 	 */
     public void testTextDurgSymp() {
-    	assertTrue(EXPECTED_SYMPTOM.equals((String)mViewSymp.getText()));
+        assertFalse(originalUnknown.equals((String)mViewSymp.getText()));
     }
     
     /* 
 	 * makes sure the textView with the drug's side effects is updated
 	 */
     public void testTextDrugSideEff() {
-    	assertTrue(EXPECTED_SIDE_EFF.equals((String)mViewSideEff.getText()));
+        assertFalse(originalUnknown.equals((String)mViewSideEff.getText()));
     }
     
     /* 
 	 * makes sure the textView with the drug's directions is updated
 	 */
     public void testTextDrugDir() {
-    	assertTrue(EXPECTED_DIRECTIONS.equals((String)mViewDir.getText()));
+        assertFalse(originalUnknown.equals((String)mViewDir.getText()));
     }
     
     /*
      * makes sure Nearest Pharmacy button is clickable
      */
     public void testNearestButton() {
-    	assertFalse(mButtonNearest.callOnClick());
+    	assert(mButtonNearest.callOnClick());
     }
     
     /* (non-Javadoc)

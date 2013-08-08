@@ -38,13 +38,6 @@ public class A_MainActivityTest extends ActivityInstrumentationTestCase2<MainAct
         assertNotNull(mButtonStart);
     }
     
-    /*
-     * makes sure Start button is clickable
-     */
-    public void testStartButton() {
-    	assertTrue(mButtonStart.callOnClick());
-    }
-    
 	/* (non-Javadoc)
 	 * @see android.test.ActivityInstrumentationTestCase2#tearDown()
 	 */

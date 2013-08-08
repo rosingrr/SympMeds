@@ -25,7 +25,7 @@ public class D_DrugInfoTest extends ActivityInstrumentationTestCase2<DrugInfo> {
     private TextView mViewSideEff;
     private TextView mViewDirLabel;
     private TextView mViewDir;
-    //string constants for what the textViews should display
+    // the original strings the textViews that get changed have before starting up
     private static final String EXPECTED_NAME = "Advil";
     private static final String EXPECTED_SYMPTOM = "Fever";
     private static final String EXPECTED_SIDE_EFF = "Ibuprofen may cause a severe allergic reaction, especially in people that are allergic to aspirin. This product also contains an NSAID, which may cause severe stomach bleeding.";
