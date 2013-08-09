@@ -27,7 +27,7 @@ public class D_DrugInfoTest extends ActivityInstrumentationTestCase2<DrugInfo> {
     private TextView mViewDir;
     //string constants for what the textViews should display
     private static final String EXPECTED_NAME = "Advil";
-    private static final String EXPECTED_SYMPTOM = "Fever, Headache, Toothache";
+    private static final String EXPECTED_SYMPTOM = "Fever";
     private static final String EXPECTED_SIDE_EFF = "Ibuprofen may cause a severe allergic reaction, especially in people that are allergic to aspirin. This product also contains an NSAID, which may cause severe stomach bleeding.";
     private static final String EXPECTED_DIRECTIONS = "Adults and children 12 years and over: take 1 tablet every 4 to 6 hours while symptoms persist. If pain of fever does not respond to 1 tablet, 2 tablets amy be used. Do not exceet 6 tablets in 24 hours, unless directed by doctor.";
     

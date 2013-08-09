@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="NewApi" severity="ignore">
+        <ignore path="SympMedsTestsTest\src\com\example\sympmeds\test\D_DrugInfoTest.java" />
+    </issue>
+</lint>
