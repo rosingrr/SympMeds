@@ -8,6 +8,13 @@ import android.content.Intent;
 import android.view.Menu;
 import android.widget.TextView;
 
+/*
+ *This shows all the information on the drug that was chosen from the previous activity which includes:
+ *			name of drug
+ *			symptoms that the drug treats (only symptoms that are covered by the app)
+ *			side-effects or warnings of the drug
+ *			directions of use for the drug
+ */
 public class DrugInfo extends Activity {
 	private final static int MEDICATION_SHEET = 1;
 	private final static int STARTING_ROW = 1;

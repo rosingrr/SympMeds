@@ -12,6 +12,9 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 
+/*
+ * This is the starting activity that shows a disclaimer and a Start button that opens the next activity
+ */
 public class MainActivity extends Activity {
 	//holds the database excel file as a public variable so that it doesn't have to be constantly opened
 	public static Workbook database;
@@ -68,7 +71,7 @@ public class MainActivity extends Activity {
     /** Called when the user clicks the Search button.
      * It calls up the SymptomList activity.
      */
-    public void start (View view) {
+    public void start(View view) {
     	// Do something in response to button
 		Intent intent = new Intent(this, SymptomList.class);
 		startActivity(intent);

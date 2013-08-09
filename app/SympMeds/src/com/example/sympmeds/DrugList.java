@@ -13,6 +13,14 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+/*
+ * This shows all the information on the symptom that was chosen from the previous activity which includes:
+ * 			the symptom name
+ * 			a description of the symptom
+ * 			the list of drugs that treat the symptom
+ * The list of drugs is in a spinner like the previous activity.  There is also a button opens the next
+ * activity with the drug chosen from the spinner.
+ */
 public class DrugList extends Activity {
 	public final static String DRUG_INFO = "com.example.sympmeds.INFO";
 	private final static int SYMPTOM_SHEET = 0;

@@ -12,6 +12,10 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
+/*
+ * This shows the list of symptoms the user can choose in a spinner and a button that sends the chosen
+ * symptom from the spinner to the next activity that the button opens
+ */
 public class SymptomList extends Activity {
 	public final static String DRUG_LIST = "com.example.sympmeds.LIST";
 	private final static int SYMPTOM_SHEET = 0;

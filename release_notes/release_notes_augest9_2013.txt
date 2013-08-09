@@ -1,0 +1,5 @@
+release notes for Final Release:
+App is implemented and works
+Tests are implemented and work
+Code Coverage works (shows 0%, we think this is from how the app is set up that all the tests are black-box)
+Documentation is up
