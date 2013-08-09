@@ -22,7 +22,7 @@ public class C_DrugListTest extends ActivityInstrumentationTestCase2<DrugList> {
     private static final String EXPECTED_SYMPTOM = "Fever";	//for the SymptomName textView
     private static final String EXPECTED_DESCRIPTION = "An elevation of body temperature above the normal range of 97.7–99.5 °F (36.5–37.5 °C).";	//for the SymptomDescription textView
     //int constant for what the size of the spinner should be
-    private static final int DRUG_COUNT = 3;
+    private static final int DRUG_COUNT = 1;
 
     
 	/**

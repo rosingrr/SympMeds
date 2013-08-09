@@ -12,7 +12,7 @@ public class B_SymptomListTest extends ActivityInstrumentationTestCase2<SymptomL
     private TextView mViewSympInstr;			// the activity's TextView (for the instructions)
     private Spinner mSpinnerSymp;	//the activity's Spinner (for the list of symptoms)
     private Button mButtonSearch;	//the activity's Search button
-    private static final int SYMPTOM_COUNT = 15;
+    private static final int SYMPTOM_COUNT = 16;
     
 	/**
 	 * @
