@@ -34,7 +34,7 @@ public class MainActivity extends Activity {
 			//open Database file in inputStream
 			inputStream = assetManager.open("Database.xls");
 		} catch(IOException e) {
-			//e.printStackTrace();
+			e.printStackTrace();
 		}
 		try{
 			try {
@@ -42,16 +42,16 @@ public class MainActivity extends Activity {
 				database = Workbook.getWorkbook(inputStream);
 
 			} catch (IOException e) {
-				//e.printStackTrace();
+				e.printStackTrace();
 			}
 		} catch(BiffException e) {
-			//e.printStackTrace();
+			e.printStackTrace();
 		}
 		try {
 			//close input stream
 			inputStream.close();
 		} catch (IOException e) {
-			//e.printStackTrace();
+			e.printStackTrace();
 		}
     }
 
