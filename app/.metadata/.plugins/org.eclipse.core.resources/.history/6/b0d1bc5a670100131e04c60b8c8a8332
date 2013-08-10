@@ -64,7 +64,7 @@ public class SymptomList extends Activity {
      * It calls up the DrugList activity with all the information that is respect to
      * what is selected from the spinner in this activity.
      */
-    public void search(View view) {
+    public void search (View view) {
     	// Do something in response to button
 		Intent intent = new Intent(this, DrugList.class);
 		Spinner spinner = (Spinner) findViewById(R.id.symptom_spinner);

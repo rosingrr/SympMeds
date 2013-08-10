@@ -102,7 +102,7 @@ public class DrugList extends Activity {
      * It calls up the DrugInfo activity with all the information that is respect to
      * what is selected from the spinner in this activity.
      */
-    public void getInfo(View view) {
+    public void getInfo (View view) {
     	// Do something in response to button
 		Intent intent = new Intent(this, DrugInfo.class);
 		Spinner spinner = (Spinner) findViewById(R.id.drug_spinner);
